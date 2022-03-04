@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Babouch Party</title>
+    <link rel="shortcut icon" type="image/png" href="Baboucha.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <meta name="theme-color" content="auto" />
+    <style>
+      body {
+        font-family: "Times New Roman", Georgia, Serif;
+      }
+      .darck {
+        background-color: #232323 !important;
+        color: white !important;
+        border-color: #333 !important;
+        box-shadow: unset !important;
+        background-image: unset;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Playfair Display";
+        letter-spacing: 5px;
+      } /* From cssbuttons.io by @satyamchaudharydev */
+      /* The switch - the box around the slider */
+      .switch {
+        /* --moon-mask: ; */
+        font-size: 17px;
+        position: relative;
+        display: inline-block;
+        width: 3.5em;
+        height: 2em;
+      }
+
+      /* Hide default HTML checkbox */
+      .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+
+      /* The slider */
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #f4f4f5;
+        transition: 0.4s;
+        border-radius: 30px;
+      }
+
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 1.4em;
+        width: 1.4em;
+        border-radius: 20px;
+        left: 0.3em;
+        bottom: 0.3em;
+        background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
+        transition: 0.4s;
+      }
+
+      input:checked + .slider {
+        background-color: #303136;
+      }
+
+      input:checked + .slider:before {
+        transform: translateX(1.5em);
+        background: #303136;
+        box-shadow: inset -3px -2px 5px -2px #8983f7,
+          inset -10px -5px 0 0 #a3dafb;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div
+        class="w3-bar w3-white w3-padding w3-card"
+        style="letter-spacing: 4px"
+      >
+        <a href="#home" class="w3-bar-item w3-button"
+          ><img style="width: 50px; height: 50px" src="Baboucha.png"
+        /></a>
+        <!-- Right-sided navbar links. Hide them on small screens -->
+        <div class="w3-right w3-hide-small">
+          <a href="#about" class="w3-bar-item w3-button">About</a>
+          <a href="#menu" class="w3-bar-item w3-button">Menu</a>
+          <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+          <aside style="float: right">
+            <label class="switch">
+              <input
+                class="w3-bar-item"
+                onclick="myFunction()"
+                type="checkbox"
+              />
+              <span class="slider"></span>
+            </label>
+          </aside>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header
+      class="w3-display-container w3-content w3-wide"
+      style="max-width: 1600px; min-width: 500px"
+      id="home"
+    >
+      <img
+        class="w3-image"
+        src="party1.jpg"
+        alt="Hamburger Catering"
+        width="1600"
+        height="300"
+      />
+      <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+        <h1 class="w3-xxlarge">Babouch Party</h1>
+      </div>
+    </header>
+
+    <!-- Page content -->
+    <div class="w3-content" style="max-width: 1100px">
+      <!-- About Section -->
+      <div class="w3-row w3-padding-64" id="about">
+        <div class="w3-col m6 w3-padding-large w3-hide-small">
+          <img
+            src="party2.jpg"
+            class="w3-round w3-image w3-opacity-min"
+            alt="Table Setting"
+            width="600"
+            height="750"
+          />
+        </div>
+
+        <div class="w3-col m6 w3-padding-large">
+          <h1 class="w3-center">About Babouch party</h1>
+          <br />
+          <h5 class="w3-center">Hna new geniration</h5>
+          <p class="w3-large">
+            Bounjour, marhba b ga3 les Marocaine hna mjmou3a mn chabab li lhadaf
+            dialna hwa ncharfo b mantojat dial lblad dialna o n3tiwha wahd lhis
+            3asri o jdid hes chababi, kayjm3 bin lasala o mo3asara at the same
+            time. kanrho bikom f lmaw9i3 dialna o kantmnaw tstamt3o b had tjriba
+            <span class="w3-tag w3-light-grey">Babouch Party team.</span>
+          </p>
+          <p class="w3-large w3-text-grey w3-hide-medium">
+            Hna w5a chabab walkin m3ana mjmou3a mn dawi l5ibra f mjal tab5 li
+            kaywafro lina da3m daim dialhom, o m3a roh chababia o tjriba lkbira
+            dialhom kan 9ado n3tio ahsn ma 3ndna. mn bin l5obaraa dialna kayn
+            Mr.Aziz Elgadadni 5ibra twila fl majal
+          </p>
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- Menu Section -->
+      <div class="w3-row w3-padding-64" id="menu">
+        <div class="w3-col l6 w3-padding-large">
+          <h1 class="w3-center">Menu Dialna</h1>
+          <br />
+          <h4>Jbania s4ira m3a lblol</h4>
+          <p class="w3-text-grey">Mini jbania lcha5s wahd m3a lblol</p>
+          <br />
+
+          <h4>Jbania Moyen m3A lblol</h4>
+          <p class="w3-text-grey">jbania Moyen lcha5sin m3a double lblol</p>
+          <br />
+
+          <h4>Pack familial de 4 persone</h4>
+          <p class="w3-text-grey">
+            Pack 3aili kaykfi l 4 nass bach tstamt3 m3a l3aila
+          </p>
+          <br />
+
+          <h4>Pack familial de 10 persone</h4>
+          <p class="w3-text-grey">
+            Had lpack mdior ldiaf bach thala f diaf diawlk
+          </p>
+          <br />
+
+          <h4>Babouch Party pack</h4>
+          <p class="w3-text-grey">
+            Had lpack dial les party bach tji lparty Msrooo3a
+          </p>
+        </div>
+
+        <div class="w3-col l6 w3-padding-large">
+          <img
+            src="party3.jpg"
+            class="w3-round w3-image w3-opacity-min"
+            alt="Menu"
+            style="width: 100%"
+          />
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- Contact Section -->
+      <div class="w3-container w3-padding-64" id="contact">
+        <h1>Contact</h1>
+        <br />
+        <p>
+          Kanrhbo bikom tzorona f lmaw93 dialna bach tchofo l5adna dialna o ymkn
+          tsifto lina des message bach tgolo lina raie dialkom f 5dma dialna
+        </p>
+        <p class="w3-text-blue-grey w3-large">
+          <b>Babouch Party center L9asba hda jam3e lbiade à Mohammedia </b>
+        </p>
+        <p>
+          You can also contact us by phone 06-66666666 or email
+          AzizElgadani@gmail.com, or you can send us a message here:
+        </p>
+        <form action="/action_page.php" target="_blank">
+          <p>
+            <input
+              class="w3-input w3-padding-16"
+              type="text"
+              placeholder="Name"
+              required
+              name="Name"
+            />
+          </p>
+          <p>
+            <input
+              class="w3-input w3-padding-16"
+              type="number"
+              placeholder="How many people"
+              required
+              name="People"
+            />
+          </p>
+          <p>
+            <input
+              class="w3-input w3-padding-16"
+              type="datetime-local"
+              placeholder="Date and time"
+              required
+              name="date"
+              value="2020-11-16T20:00"
+            />
+          </p>
+          <p>
+            <input
+              class="w3-input w3-padding-16"
+              type="text"
+              placeholder="Message \ Special requirements"
+              required
+              name="Message"
+            />
+          </p>
+          <p>
+            <button class="w3-button w3-light-grey w3-section" type="submit">
+              SEND MESSAGE
+            </button>
+          </p>
+        </form>
+      </div>
+
+      <!-- End page content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-light-grey w3-padding-32">
+      <p>
+        Powered by
+        <a title="Taoufik Oubrahim" target="_blank" class="w3-hover-text-green">
+          Taoufik Oubrahim
+        </a>
+      </p>
+    </footer>
+    <script>
+      function myFunction() {
+        var element = document.body;
+        element.classList.toggle("darck");
+      }
+    </script>
+  </body>
+</html>
